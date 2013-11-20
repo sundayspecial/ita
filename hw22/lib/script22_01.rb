@@ -1,7 +1,7 @@
 # ========================================================================
-# Script 		=	script22_02
+# Script 		=	script22_01
 # ========================================================================
-# Description 	=	"This script shows entered arguments in singular"
+# Description 	=	"This script shows entered arguments in plural"
 # Name 			=	"Kristina Rudzinskaya"
 # Email 		=	"kristina.rudzinskaya@gmail.com"
 # ========================================================================
@@ -18,4 +18,4 @@ end.parse!
 
 csv_file = CSV.read($file_name)
 
-puts "My favorite fruit is #{csv_file[$row_num][0].chop} and #{csv_file[$row_num][1].chop}"
+puts "My favorite fruits are #{csv_file[$row_num][0]}s and #{csv_file[$row_num][1]}s"

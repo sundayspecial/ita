@@ -1,7 +1,7 @@
 # ========================================================================
-# Script 		=	script22_02
+# Script 		=	script22_03
 # ========================================================================
-# Description 	=	"This script shows entered arguments in singular"
+# Description 	=	"This script divides two numbers from csv file and outputs the result"
 # Name 			=	"Kristina Rudzinskaya"
 # Email 		=	"kristina.rudzinskaya@gmail.com"
 # ========================================================================
@@ -17,5 +17,6 @@ OptionParser.new do |opts|
 end.parse!
 
 csv_file = CSV.read($file_name)
-
-puts "My favorite fruit is #{csv_file[$row_num][0].chop} and #{csv_file[$row_num][1].chop}"
+a= csv_file[$row_num][0].to_i
+b= csv_file[$row_num][1].to_i
+puts "When i am dividing #{a} by #{b} i get #{a/b}"
