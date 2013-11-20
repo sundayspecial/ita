@@ -1,0 +1,20 @@
+{
+    "epinions_invalid_id":
+    [
+        {
+            "username" : "qa20", "password" : "testing"
+        }
+    ],
+    "epinions_invalid_password":
+    [
+        {
+            "username" : "isabellachu", "password" : "123test"
+        }
+    ],
+    "epinions_valid_accounts":
+    [
+        {
+            "username" : "isabellachu", "password" : "chuCHU73"
+        }
+    ]
+}
