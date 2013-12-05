@@ -187,7 +187,7 @@ Validations:
                           exit
                         end
                       end
-                      sign_in_page_text = page.parser.xpath("//span[@class='d-r']/b")[1].to_s
+                      sign_in_page_text = page.parser.xpath("//span[@class='d-r']/b")[1].text
                       if sign_in_page_text ==  test_details['sign_in_page_text']
                         @report += <<-EOR
  PASS: The user '#{accounts["username"]}' is not Logged In, '#{test_details['sign_in_page_text']}' text is present on the page.
@@ -233,7 +233,7 @@ Validations:
                           exit
                         end
                       end
-                      sign_in_page_text = page.parser.xpath("//span[@class='d-r']/b")[1].to_s
+                      sign_in_page_text = page.parser.xpath("//span[@class='d-r']/b")[1].text
                       if sign_in_page_text ==  test_details['sign_in_page_text']
                         @report += <<-EOR
  PASS: The user '#{accounts["username"]}' is not Logged In, '#{test_details['sign_in_page_text']}' text is present on the page.
