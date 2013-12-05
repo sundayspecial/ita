@@ -26,7 +26,7 @@ Validations:
 Element: 04 : <p>
 
 Validations:
- PASS: Element exists and the occurrence count: 68
+ PASS: Element exists and the occurrence count: 66
 ------------------------------------------------------------------------------------------------------------------------
 Element: 05 : <meta>
 
